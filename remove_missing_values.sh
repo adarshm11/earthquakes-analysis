@@ -6,7 +6,6 @@ if [ $# -ne 4 ]; then
   exit 1
 fi
 
-# Assign input arguments to variables
 input_csv=$1
 column1=$2
 column2=$3
