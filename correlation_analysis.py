@@ -6,6 +6,11 @@ column1 = 'magnitude'
 column2 = 'latitude'
 column3 = 'longitude'
 
+for column in [column1, column2, column3]:
+    if column not in df.columns:
+        print(f'Column "{column}" does not exist in the dataset.')
+        exit()
+
 latitude_correlation = df[column1].corr(df[column2])
 longitude_correlation = df[column1].corr(df[column3])
 
